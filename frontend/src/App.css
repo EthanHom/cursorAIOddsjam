@@ -1,0 +1,165 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table styles */
+.MuiTableContainer-root {
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.MuiTableContainer-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+.MuiTableCell-root {
+  transition: background-color 0.2s ease;
+}
+
+/* Chip styles */
+.MuiChip-root {
+  transition: all 0.2s ease;
+}
+
+.MuiChip-root:hover {
+  transform: scale(1.05);
+}
+
+/* Button styles */
+.MuiIconButton-root {
+  transition: all 0.2s ease;
+}
+
+.MuiIconButton-root:hover {
+  transform: scale(1.1);
+  background-color: rgba(144, 202, 249, 0.1);
+}
+
+/* TextField styles */
+.MuiTextField-root {
+  transition: all 0.3s ease;
+}
+
+.MuiTextField-root:focus-within {
+  transform: translateY(-2px);
+}
+
+/* Select styles */
+.MuiSelect-select {
+  transition: all 0.3s ease;
+}
+
+.MuiSelect-select:hover {
+  background-color: rgba(144, 202, 249, 0.1);
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.MuiSkeleton-root {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Gradient text animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #90caf9 30%, #f48fb1 90%);
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+  }
+  
+  .MuiContainer-root {
+    padding: 16px;
+  }
+  
+  .MuiTypography-h3 {
+    font-size: 1.8rem;
+  }
+  
+  .MuiTable-root {
+    font-size: 0.875rem;
+  }
+}
